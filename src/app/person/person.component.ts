@@ -6,7 +6,7 @@ import { Person } from './person';
   styleUrls: ['./person.component.css'],
 })
 export class PersonComponent {
-  person: Person;
+  person: Person = {name:"", email:"", age:""};
 
   savePersonInfo() {
     this.person.name = this.person.name;
