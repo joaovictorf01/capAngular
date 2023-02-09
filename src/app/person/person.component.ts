@@ -6,6 +6,12 @@ import { Person } from './person';
   styleUrls: ['./person.component.css'],
 })
 export class PersonComponent {
-  Person: any;
-  consolePerson: any;
+  person: Person;
+
+  savePersonInfo() {
+    this.person.name = this.person.name;
+    this.person.email = this.person.email;
+    this.person.age = this.person.age;
+    alert(this.person.name);
+  }
 }

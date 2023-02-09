@@ -1,17 +1,16 @@
 <h2>Preencha corretamente o formulário.</h2>
-
 <form>
   <label for="name">nome:</label>
   <br />
-    <input type="text" id="name" name="name" [(ngModel)]="Person.name" />
+  <input type="text" id="name" name="name" [(ngModel)]="person.name" />
   <br />
   <label for="email">Email:</label>
   <br />
-    <input type="email" id="email" name="email" />
-  <br />
+  <input type="email" id="email" name="email" [(ngModel)]="person.email" />
+
   <label for="idade">idade:</label>
   <br />
-  <input type="text" id="idade" name="idade" />
+  <input type="text" id="age" name="idade" [(ngModel)]="person.age" />
   <br />
-  <Button> Salvar informações. </Button>
+  <Button (click)="savePersonInfo()"> Salvar informações. </Button>
 </form>
