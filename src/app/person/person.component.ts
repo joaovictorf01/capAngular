@@ -6,12 +6,14 @@ import { Person } from './person';
   styleUrls: ['./person.component.css'],
 })
 export class PersonComponent {
-  person: Person = {name:"", email:"", age:""};
-
+  person: Person = { name: '', email: '', age: '' };
+  personList: Person[] = [];
   savePersonInfo() {
     this.person.name = this.person.name;
     this.person.email = this.person.email;
     this.person.age = this.person.age;
-    alert(this.person.name);
+
+    this.personList.push(this.person);
+    alert("pessoa" + this.personList.length+ "salva, confira na lista " );
   }
 }

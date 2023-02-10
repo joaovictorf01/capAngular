@@ -14,3 +14,11 @@
   <br />
   <Button (click)="savePersonInfo()"> Salvar informações. </Button>
 </form>
+<h3>Mostrando as Pessoas</h3>
+<ul>
+  <li *ngFor="person; of: personList">
+    <p>Nome :{{ person.name }}</p>
+    <p>Email: {{ person.email }}</p>
+    <p>idade: {{ person.age }}</p>
+  </li>
+</ul>
