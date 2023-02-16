@@ -1,0 +1,131 @@
+/* You can add global styles to this file, and also import other style files */
+/* https://gist.github.com/adrianomaringolo/cce113ee421145bedaf38e56b97f1e68 */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  padding: 10px;
+  background-color: rgb(45, 90, 45);
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #ddd;
+  margin-bottom: 35px;
+}
+
+.buttons button, .button {
+  padding: 15px;
+  background-color: rgb(177, 177, 177);
+  transition: all 0.5s;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+}
+
+.buttons button:hover, .button:hover {
+  padding: 15px;
+  color: white;
+  background-color: rgb(95, 94, 94);;
+}
+
+.info-area > .buttons {
+  font-size: 14px;
+  background-color: unset;
+  flex-direction: row;
+  padding: unset;
+}
+
+.logo {
+  background-color: white;
+  padding: 8px;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.info-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  font-size: 14px;
+  color: #141414;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+label {
+  font-size: 14px;
+  color: #aaa;
+}
+
+input, select {
+  font-size: 14px;
+  color: #aaa;
+  padding: 10px;
+}
+
+.info-area .field button {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #ccc;
+  transition: all 0.5s;
+  cursor: pointer;
+  border: none;
+}
+
+.info-area .field button.save {
+  padding: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
+  background-color: rgb(155, 185, 141);
+  transition: all 0.5s;
+  cursor: pointer;
+  border: none;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.list .item {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 24%;
+  border: 1px solid #555;
+  border-radius: 10px;
+  padding: 10px;
+}
